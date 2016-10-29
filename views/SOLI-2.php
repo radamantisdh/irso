@@ -187,49 +187,39 @@
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Región:</label>
                                     <div class="col-sm-8 ">
-                                        <select class="selectpicker" name="soli_region">
-                                            <option value="">Seleccione Región:</option>
-                                            <option value="I Región, Tarapacá.">I Región, Tarapacá.</option>
-                                            <option value="II Región, Antofagasta.">II Región, Antofagasta.</option>
-                                            <option value="III Región, Atacama.">III Región, Atacama.</option>
-                                            <option value="IV Región, Coquimbo.">IV Región, Coquimbo.</option>
-                                            <option value="V Región, Valparaiso.">V Región, Valparaiso.</option>
-                                            <option value="RM, Metropolitana de Santiago.">RM, Metropolitana de Santiago.</option>
-                                            <option value="VI Región, Libertador General Bernardo O\ Higgins.">VI Región, Libertador General Bernardo O\ Higgins.</option>
-                                            <option value="VII Región, Maule.">VII Región, Maule.</option>
-                                            <option value="VIII Región, Biobío.">VIII Región, Biobío.</option>
-                                            <option value="IX Región, La Araucanía.">IX Región, La Araucanía.</option>
-                                            <option value="X Región, Los Lagos.">X Región, Los Lagos.</option>
-                                            <option value="XI Región, Aisén del General Carlos Ibáñez del Campo.">XI Región, Aisén del General Carlos Ibáñez del Campo.</option>
-                                            <option value="XII Región, Magallanes y de la Antártica Chilena.">XII Región, Magallanes y de la Antártica Chilena.</option>
-                                            <option value="XIV Región, Los Ríos.">XIV Región, Los Ríos.</option>
-                                            <option value="XV Región, Arica y Parinacota.">XV Región, Arica y Parinacota.</option>
+                                        <select class="selectpicker" name="soli_region"  id="soli_region">
+                                            <option value="0">Seleccione Región:</option>
+                                            <option value="15">XV Región, Arica y Parinacota.</option>
+                                            <option value="1">I Región, Tarapacá.</option>
+                                            <option value="2">II Región, Antofagasta.</option>
+                                            <option value="3">III Región, Atacama.</option>
+                                            <option value="4">IV Región, Coquimbo.</option>
+                                            <option value="5">V Región, Valparaiso.</option>
+                                            <option value="13">RM, Metropolitana de Santiago.</option>
+                                            <option value="6">VI Región, Libertador General Bernardo O\ Higgins.</option>
+                                            <option value="7">VII Región, Maule.</option>
+                                            <option value="8">VIII Región, Biobío.</option>
+                                            <option value="9">IX Región, La Araucanía.</option>
+                                            <option value="14">XIV Región, Los Ríos.</option>
+                                            <option value="10">X Región, Los Lagos.</option>
+                                            <option value="11">XI Región, Aisén del General Carlos Ibáñez del Campo.</option>
+                                            <option value="12">XII Región, Magallanes y de la Antártica Chilena.</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Ciudad:</label>
                                     <div class="col-sm-8 ">
-                                        <select class="selectpicker" name="soli_ciudad">
+                                        <select class="selectpicker" name="soli_ciudad"  id="soli_ciudad">
                                             <option value="">Seleccione ciudad</option>
-                                            <option>ciudad 1</option>
-                                            <option>ciudad 2</option>
-                                            <option>ciudad 3</option>
-                                            <option>ciudad 4</option>
-                                            <option>ciudad 5</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Comuna:</label>
                                     <div class="col-sm-8 ">
-                                        <select class="selectpicker" name="soli_comuna">
+                                        <select class="selectpicker" name="soli_comuna" id="soli_comuna">
                                             <option value="">Seleccione comuna</option>
-                                            <option>comuna 1</option>
-                                            <option>comuna 2</option>
-                                            <option>comuna 3</option>
-                                            <option>comuna 4</option>
-                                            <option>comuna 5</option>
                                         </select>
                                     </div>
                                 </div>
@@ -313,47 +303,39 @@
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Región:</label>
                                     <div class="col-sm-8 ">
-                                        <select class="selectpicker" name="inst_radio_region">
-                                            <option value="">Seleccione Región:</option>
-                                            <option value="I Región, Tarapacá.">I Región, Tarapacá.</option>
-                                            <option value="II Región, Antofagasta.">II Región, Antofagasta.</option>
-                                            <option value="III Región, Atacama.">III Región, Atacama.</option>
-                                            <option value="IV Región, Coquimbo.">IV Región, Coquimbo.</option>
-                                            <option value="V Región, Valparaiso.">V Región, Valparaiso.</option>
-                                            <option value="RM, Metropolitana de Santiago.">RM, Metropolitana de Santiago.</option>
-                                            <option value="VI Región, Libertador General Bernardo O\ Higgins.">VI Región, Libertador General Bernardo O\ Higgins.</option>
-                                            <option value="VII Región, Maule.">VII Región, Maule.</option>
-                                            <option value="VIII Región, Biobío.">VIII Región, Biobío.</option>
-                                            <option value="IX Región, La Araucanía.">IX Región, La Araucanía.</option>
-                                            <option value="X Región, Los Lagos.">X Región, Los Lagos.</option>
-                                            <option value="XI Región, Aisén del General Carlos Ibáñez del Campo.">XI Región, Aisén del General Carlos Ibáñez del Campo.</option>
-                                            <option value="XII Región, Magallanes y de la Antártica Chilena.">XII Región, Magallanes y de la Antártica Chilena.</option>
-                                            <option value="XIV Región, Los Ríos.">XIV Región, Los Ríos.</option>
-                                            <option value="XV Región, Arica y Parinacota.">XV Región, Arica y Parinacota.</option>
+                                        <select class="selectpicker" name="inst_radio_region" id="inst_radio_region">
+                                            <option value="0">Seleccione Región:</option>
+                                            <option value="15">XV Región, Arica y Parinacota.</option>
+                                            <option value="1">I Región, Tarapacá.</option>
+                                            <option value="2">II Región, Antofagasta.</option>
+                                            <option value="3">III Región, Atacama.</option>
+                                            <option value="4">IV Región, Coquimbo.</option>
+                                            <option value="5">V Región, Valparaiso.</option>
+                                            <option value="13">RM, Metropolitana de Santiago.</option>
+                                            <option value="6">VI Región, Libertador General Bernardo O\ Higgins.</option>
+                                            <option value="7">VII Región, Maule.</option>
+                                            <option value="8">VIII Región, Biobío.</option>
+                                            <option value="9">IX Región, La Araucanía.</option>
+                                            <option value="14">XIV Región, Los Ríos.</option>
+                                            <option value="10">X Región, Los Lagos.</option>
+                                            <option value="11">XI Región, Aisén del General Carlos Ibáñez del Campo.</option>
+                                            <option value="12">XII Región, Magallanes y de la Antártica Chilena.</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Ciudad:</label>
-                                    <div class="col-sm-2 ">
-                                        <select class="selectpicker" name="inst_radio_ciudad">
+                                    <div class="col-sm-9 ">
+                                        <select class="selectpicker" name="inst_radio_ciudad" id="inst_radio_ciudad">
                                             <option value="">Seleccione ciudad</option>
-                                            <option>ciudad 1</option>
-                                            <option>ciudad 2</option>
-                                            <option>ciudad 3</option>
-                                            <option>ciudad 4</option>
-                                            <option>ciudad 5</option>
                                         </select>
                                     </div>
+                                </div>
+                                <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Comuna:</label>
-                                    <div class="col-sm-2 ">
-                                        <select class="selectpicker" name="inst_radio_comuna">
+                                    <div class="col-sm-9 ">
+                                        <select class="selectpicker" name="inst_radio_comuna" id="inst_radio_comuna">
                                             <option value="">Seleccione comuna</option>
-                                            <option>comuna 1</option>
-                                            <option>comuna 2</option>
-                                            <option>comuna 3</option>
-                                            <option>comuna 4</option>
-                                            <option>comuna 5</option>
                                         </select>
                                     </div>
                                 </div>
@@ -432,35 +414,35 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label form-label">Equipo:</label>
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese Nombre Equipo" name="equipo_nombre1" required>
+                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese Nombre Equipo" name="equipo_nombre1" >
                                     </div>
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="input11" placeholder="Marca" name="equipo_marca1" required>
+                                        <input type="text" class="form-control" id="input11" placeholder="Marca" name="equipo_marca1" >
                                     </div>
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="input11" placeholder="Modelo" name="equipo_modelo1" required>
+                                        <input type="text" class="form-control" id="input11" placeholder="Modelo" name="equipo_modelo1" >
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label form-label">N° de Serie:</label>
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese N° de serie" name="equipo_num_serie1" required>
+                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese N° de serie" name="equipo_num_serie1" >
                                     </div>
                                     <label class="col-sm-3 control-label form-label">Año de fabricación:</label>
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese Año" name="equipo_anio1" required>
+                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese Año" name="equipo_anio1" >
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label form-label">N° serie tubo:</label>
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese N° de serie" name="equipo_num_tubo" required>
+                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese N° de serie" name="equipo_num_tubo" >
                                     </div>
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="input11" placeholder="kV máx." name="equipo_kv_max" required>
+                                        <input type="text" class="form-control" id="input11" placeholder="kV máx." name="equipo_kv_max" >
                                     </div>
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="input11" placeholder="mA máx." name="equipo_ma_max" required>
+                                        <input type="text" class="form-control" id="input11" placeholder="mA máx." name="equipo_ma_max" >
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -471,33 +453,33 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label form-label">Equipo:</label>
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese equipo" name="equipo_nombre2" required>
+                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese equipo" name="equipo_nombre2" >
                                     </div>
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="input11" placeholder="Marca" name="equipo_marca2" required>
+                                        <input type="text" class="form-control" id="input11" placeholder="Marca" name="equipo_marca2" >
                                     </div>
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="input11" placeholder="Modelo" name="equipo_modelo2" required>
+                                        <input type="text" class="form-control" id="input11" placeholder="Modelo" name="equipo_modelo2" >
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label form-label">N° de Serie:</label>
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese N° de serie" name="equipo_num_serie2" required>
+                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese N° de serie" name="equipo_num_serie2" >
                                     </div>
                                     <label class="col-sm-3 control-label form-label">Año de fabricación:</label>
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese Año" name="equipo_anio2" required>
+                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese Año" name="equipo_anio2" >
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label form-label"><b>Radioisótopo 1:</b></label>
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="input11" name="equipo_radioiso1" required>
+                                        <input type="text" class="form-control" id="input11" name="equipo_radioiso1" >
                                     </div>
                                     <label class="col-sm-3 control-label form-label">Actividad inicial en Bq:</label>
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="input11" name="equipo_bq1" required>
+                                        <input type="text" class="form-control" id="input11" name="equipo_bq1" >
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -516,7 +498,7 @@
                                     </div>
                                     <label class="col-sm-3 control-label form-label">N° de Serie:</label>
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese Número de serie" name="equipo_num_serie_r1" required>
+                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese Número de serie" name="equipo_num_serie_r1" >
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -968,7 +950,7 @@ Plugin.js - Some Specific JS codes for Plugin Settings
     <!-- ================================================
 Bootstrap Select
 ================================================ -->
-    <script type="text/javascript" src="views/js/bootstrap-select/bootstrap-select.js"></script>
+    <!--<script type="text/javascript" src="views/js/bootstrap-select/bootstrap-select.js"></script>-->
     <!-- ================================================
 Bootstrap Toggle
 ================================================ -->
@@ -1008,6 +990,29 @@ Bootstrap Date Range Picker
     <!-- Basic Date Range Picker -->
     <script type="text/javascript">
     $(document).ready(function() {
+
+        $('#soli_region').on('change', function() {
+            var region = $(this).val();
+            $('#soli_ciudad').load("views/modales/ciudades.php?region=" + region);
+            console.log("Region Cargada: " + region);
+            $("#soli_ciudad").find('option').first().attr('selected','selected');
+
+            $('#soli_comuna').load("views/modales/comunas.php?region=" + region);
+            console.log("Comuna Cargada: " + region);
+            $("#soli_comuna").find('option').first().attr('selected','selected');
+        });
+
+        $('#inst_radio_region').on('change', function() {
+            var region = $(this).val();
+            $('#inst_radio_ciudad').load("views/modales/ciudades.php?region=" + region);
+            console.log("Region Cargada: " + region);
+            $("#inst_radio_ciudad").find('option').first().attr('selected','selected');
+
+            $('#inst_radio_comuna').load("views/modales/comunas.php?region=" + region);
+            console.log("Comuna Cargada: " + region);
+            $("#inst_radio_comuna").find('option').first().attr('selected','selected');
+        });
+
         $('#date-range-picker').daterangepicker(null, function(start, end, label) {
             console.log(start.toISOString(), end.toISOString(), label);
         });

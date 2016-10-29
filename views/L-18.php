@@ -228,36 +228,31 @@
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Región:</label>
                                     <div class="col-sm-8 ">
-                                        <select class="selectpicker" name="rep_leg_region">
-                                            <option value="">Seleccione Región:</option>
-                                            <option value="I Región, Tarapacá.">I Región, Tarapacá.</option>
-                                            <option value="II Región, Antofagasta.">II Región, Antofagasta.</option>
-                                            <option value="III Región, Atacama.">III Región, Atacama.</option>
-                                            <option value="IV Región, Coquimbo.">IV Región, Coquimbo.</option>
-                                            <option value="V Región, Valparaiso.">V Región, Valparaiso.</option>
-                                            <option value="RM, Metropolitana de Santiago.">RM, Metropolitana de Santiago.</option>
-                                            <option value="VI Región, Libertador General Bernardo O\ Higgins.">VI Región, Libertador General Bernardo O\ Higgins.</option>
-                                            <option value="VII Región, Maule.">VII Región, Maule.</option>
-                                            <option value="VIII Región, Biobío.">VIII Región, Biobío.</option>
-                                            <option value="IX Región, La Araucanía.">IX Región, La Araucanía.</option>
-                                            <option value="X Región, Los Lagos.">X Región, Los Lagos.</option>
-                                            <option value="XI Región, Aisén del General Carlos Ibáñez del Campo.">XI Región, Aisén del General Carlos Ibáñez del Campo.</option>
-                                            <option value="XII Región, Magallanes y de la Antártica Chilena.">XII Región, Magallanes y de la Antártica Chilena.</option>
-                                            <option value="XIV Región, Los Ríos.">XIV Región, Los Ríos.</option>
-                                            <option value="XV Región, Arica y Parinacota.">XV Región, Arica y Parinacota.</option>
+                                        <select class="selectpicker" name="rep_leg_region" id="rep_leg_region">
+                                            <option value="0">Seleccione Región:</option>
+                                            <option value="15">XV Región, Arica y Parinacota.</option>
+                                            <option value="1">I Región, Tarapacá.</option>
+                                            <option value="2">II Región, Antofagasta.</option>
+                                            <option value="3">III Región, Atacama.</option>
+                                            <option value="4">IV Región, Coquimbo.</option>
+                                            <option value="5">V Región, Valparaiso.</option>
+                                            <option value="13">RM, Metropolitana de Santiago.</option>
+                                            <option value="6">VI Región, Libertador General Bernardo O\ Higgins.</option>
+                                            <option value="7">VII Región, Maule.</option>
+                                            <option value="8">VIII Región, Biobío.</option>
+                                            <option value="9">IX Región, La Araucanía.</option>
+                                            <option value="14">XIV Región, Los Ríos.</option>
+                                            <option value="10">X Región, Los Lagos.</option>
+                                            <option value="11">XI Región, Aisén del General Carlos Ibáñez del Campo.</option>
+                                            <option value="12">XII Región, Magallanes y de la Antártica Chilena.</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Ciudad:</label>
                                     <div class="col-sm-8 ">
-                                        <select class="selectpicker" name="rep_leg_ciudad">
-                                            <option value="">Seleccione ciudad</option>
-                                            <option>ciudad 1</option>
-                                            <option>ciudad 2</option>
-                                            <option>ciudad 3</option>
-                                            <option>ciudad 4</option>
-                                            <option>ciudad 5</option>
+                                        <select class="selectpicker" name="rep_leg_ciudad" id="rep_leg_ciudad">
+                                            <option>Seleccione ciudad</option>
                                         </select>
                                     </div>
                                 </div>
@@ -297,36 +292,31 @@
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Regíon:</label>
                                     <div class="col-sm-8 ">
-                                        <select class="selectpicker" name="estab_region">
-                                            <option value="">Seleccione Región:</option>
-                                            <option value="I Región, Tarapacá.">I Región, Tarapacá.</option>
-                                            <option value="II Región, Antofagasta.">II Región, Antofagasta.</option>
-                                            <option value="III Región, Atacama.">III Región, Atacama.</option>
-                                            <option value="IV Región, Coquimbo.">IV Región, Coquimbo.</option>
-                                            <option value="V Región, Valparaiso.">V Región, Valparaiso.</option>
-                                            <option value="RM, Metropolitana de Santiago.">RM, Metropolitana de Santiago.</option>
-                                            <option value="VI Región, Libertador General Bernardo O\ Higgins.">VI Región, Libertador General Bernardo O\ Higgins.</option>
-                                            <option value="VII Región, Maule.">VII Región, Maule.</option>
-                                            <option value="VIII Región, Biobío.">VIII Región, Biobío.</option>
-                                            <option value="IX Región, La Araucanía.">IX Región, La Araucanía.</option>
-                                            <option value="X Región, Los Lagos.">X Región, Los Lagos.</option>
-                                            <option value="XI Región, Aisén del General Carlos Ibáñez del Campo.">XI Región, Aisén del General Carlos Ibáñez del Campo.</option>
-                                            <option value="XII Región, Magallanes y de la Antártica Chilena.">XII Región, Magallanes y de la Antártica Chilena.</option>
-                                            <option value="XIV Región, Los Ríos.">XIV Región, Los Ríos.</option>
-                                            <option value="XV Región, Arica y Parinacota.">XV Región, Arica y Parinacota.</option>
+                                        <select class="selectpicker" name="estab_region" id="estab_region">
+                                            <option value="0">Seleccione Región:</option>
+                                            <option value="15">XV Región, Arica y Parinacota.</option>
+                                            <option value="1">I Región, Tarapacá.</option>
+                                            <option value="2">II Región, Antofagasta.</option>
+                                            <option value="3">III Región, Atacama.</option>
+                                            <option value="4">IV Región, Coquimbo.</option>
+                                            <option value="5">V Región, Valparaiso.</option>
+                                            <option value="13">RM, Metropolitana de Santiago.</option>
+                                            <option value="6">VI Región, Libertador General Bernardo O\ Higgins.</option>
+                                            <option value="7">VII Región, Maule.</option>
+                                            <option value="8">VIII Región, Biobío.</option>
+                                            <option value="9">IX Región, La Araucanía.</option>
+                                            <option value="14">XIV Región, Los Ríos.</option>
+                                            <option value="10">X Región, Los Lagos.</option>
+                                            <option value="11">XI Región, Aisén del General Carlos Ibáñez del Campo.</option>
+                                            <option value="12">XII Región, Magallanes y de la Antártica Chilena.</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Ciudad:</label>
                                     <div class="col-sm-8 ">
-                                        <select class="selectpicker" name="estab_ciudad">
-                                            <option value="">Seleccione ciudad</option>
-                                            <option>ciudad 1</option>
-                                            <option>ciudad 2</option>
-                                            <option>ciudad 3</option>
-                                            <option>ciudad 4</option>
-                                            <option>ciudad 5</option>
+                                        <select class="selectpicker" name="estab_ciudad" id="estab_ciudad">
+                                            <option>Seleccione ciudad</option>
                                         </select>
                                     </div>
                                 </div>
@@ -684,7 +674,7 @@ Plugin.js - Some Specific JS codes for Plugin Settings
     <!-- ================================================
 Bootstrap Select
 ================================================ -->
-    <script type="text/javascript" src="views/js/bootstrap-select/bootstrap-select.js"></script>
+    <!--<script type="text/javascript" src="views/js/bootstrap-select/bootstrap-select.js"></script>-->
     <!-- ================================================
 Bootstrap Toggle
 ================================================ -->
@@ -724,6 +714,20 @@ Bootstrap Date Range Picker
     <!-- Basic Date Range Picker -->
     <script type="text/javascript">
     $(document).ready(function() {
+
+        $('#rep_leg_region').on('change', function() {
+            var region = $(this).val();
+            $('#rep_leg_ciudad').load("views/modales/ciudades.php?region=" + region);
+            console.log("Region Cargada: " + region);
+            $("#rep_leg_ciudad").find('option').first().attr('selected','selected');
+        });
+        $('#estab_region').on('change', function() {
+            var region = $(this).val();
+            $('#estab_ciudad').load("views/modales/ciudades.php?region=" + region);
+            console.log("Region Cargada: " + region);
+            $("#estab_ciudad").find('option').first().attr('selected','selected');
+        });
+
         $('#date-range-picker').daterangepicker(null, function(start, end, label) {
             console.log(start.toISOString(), end.toISOString(), label);
         });

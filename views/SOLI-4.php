@@ -131,7 +131,7 @@
                             </ul>
                         </div>
                         <div class="panel-body">
-                            <form action="save.html" class="form-horizontal">
+                            <form action="views/actions/save_soli-4.php" class="form-horizontal" id="save_soli4" method="post">
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label"><b>Numero ASDigital:</b></label>
                                     <div class="col-sm-8">
@@ -183,49 +183,39 @@
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Región:</label>
                                     <div class="col-sm-8 ">
-                                        <select class="selectpicker" name="soli_region">
-                                            <option value="">Seleccione Región:</option>
-                                            <option value="I Región, Tarapacá.">I Región, Tarapacá.</option>
-                                            <option value="II Región, Antofagasta.">II Región, Antofagasta.</option>
-                                            <option value="III Región, Atacama.">III Región, Atacama.</option>
-                                            <option value="IV Región, Coquimbo.">IV Región, Coquimbo.</option>
-                                            <option value="V Región, Valparaiso.">V Región, Valparaiso.</option>
-                                            <option value="RM, Metropolitana de Santiago.">RM, Metropolitana de Santiago.</option>
-                                            <option value="VI Región, Libertador General Bernardo O\ Higgins.">VI Región, Libertador General Bernardo O\ Higgins.</option>
-                                            <option value="VII Región, Maule.">VII Región, Maule.</option>
-                                            <option value="VIII Región, Biobío.">VIII Región, Biobío.</option>
-                                            <option value="IX Región, La Araucanía.">IX Región, La Araucanía.</option>
-                                            <option value="X Región, Los Lagos.">X Región, Los Lagos.</option>
-                                            <option value="XI Región, Aisén del General Carlos Ibáñez del Campo.">XI Región, Aisén del General Carlos Ibáñez del Campo.</option>
-                                            <option value="XII Región, Magallanes y de la Antártica Chilena.">XII Región, Magallanes y de la Antártica Chilena.</option>
-                                            <option value="XIV Región, Los Ríos.">XIV Región, Los Ríos.</option>
-                                            <option value="XV Región, Arica y Parinacota.">XV Región, Arica y Parinacota.</option>
+                                        <select class="selectpicker" name="soli_region"  id="soli_region">
+                                            <option value="0">Seleccione Región:</option>
+                                            <option value="15">XV Región, Arica y Parinacota.</option>
+                                            <option value="1">I Región, Tarapacá.</option>
+                                            <option value="2">II Región, Antofagasta.</option>
+                                            <option value="3">III Región, Atacama.</option>
+                                            <option value="4">IV Región, Coquimbo.</option>
+                                            <option value="5">V Región, Valparaiso.</option>
+                                            <option value="13">RM, Metropolitana de Santiago.</option>
+                                            <option value="6">VI Región, Libertador General Bernardo O\ Higgins.</option>
+                                            <option value="7">VII Región, Maule.</option>
+                                            <option value="8">VIII Región, Biobío.</option>
+                                            <option value="9">IX Región, La Araucanía.</option>
+                                            <option value="14">XIV Región, Los Ríos.</option>
+                                            <option value="10">X Región, Los Lagos.</option>
+                                            <option value="11">XI Región, Aisén del General Carlos Ibáñez del Campo.</option>
+                                            <option value="12">XII Región, Magallanes y de la Antártica Chilena.</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Ciudad:</label>
                                     <div class="col-sm-8 ">
-                                        <select class="selectpicker" name="soli_ciudad">
+                                        <select class="selectpicker" name="soli_ciudad"  id="soli_ciudad">
                                             <option value="">Seleccione ciudad</option>
-                                            <option>ciudad 1</option>
-                                            <option>ciudad 2</option>
-                                            <option>ciudad 3</option>
-                                            <option>ciudad 4</option>
-                                            <option>ciudad 5</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Comuna:</label>
                                     <div class="col-sm-8 ">
-                                        <select class="selectpicker" name="soli_comuna">
+                                        <select class="selectpicker" name="soli_comuna" id="soli_comuna">
                                             <option value="">Seleccione comuna</option>
-                                            <option>comuna 1</option>
-                                            <option>comuna 2</option>
-                                            <option>comuna 3</option>
-                                            <option>comuna 4</option>
-                                            <option>comuna 5</option>
                                         </select>
                                     </div>
                                 </div>
@@ -309,47 +299,37 @@
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Región:</label>
                                     <div class="col-sm-8 ">
-                                        <select class="selectpicker" name="instalacion_origen_region">
-                                            <option value="">Seleccione Región:</option>
-                                            <option value="I Región, Tarapacá.">I Región, Tarapacá.</option>
-                                            <option value="II Región, Antofagasta.">II Región, Antofagasta.</option>
-                                            <option value="III Región, Atacama.">III Región, Atacama.</option>
-                                            <option value="IV Región, Coquimbo.">IV Región, Coquimbo.</option>
-                                            <option value="V Región, Valparaiso.">V Región, Valparaiso.</option>
-                                            <option value="RM, Metropolitana de Santiago.">RM, Metropolitana de Santiago.</option>
-                                            <option value="VI Región, Libertador General Bernardo O\ Higgins.">VI Región, Libertador General Bernardo O\ Higgins.</option>
-                                            <option value="VII Región, Maule.">VII Región, Maule.</option>
-                                            <option value="VIII Región, Biobío.">VIII Región, Biobío.</option>
-                                            <option value="IX Región, La Araucanía.">IX Región, La Araucanía.</option>
-                                            <option value="X Región, Los Lagos.">X Región, Los Lagos.</option>
-                                            <option value="XI Región, Aisén del General Carlos Ibáñez del Campo.">XI Región, Aisén del General Carlos Ibáñez del Campo.</option>
-                                            <option value="XII Región, Magallanes y de la Antártica Chilena.">XII Región, Magallanes y de la Antártica Chilena.</option>
-                                            <option value="XIV Región, Los Ríos.">XIV Región, Los Ríos.</option>
-                                            <option value="XV Región, Arica y Parinacota.">XV Región, Arica y Parinacota.</option>
+                                        <select class="selectpicker" name="instalacion_origen_region" id="instalacion_origen_region">
+                                            <option value="0">Seleccione Región:</option>
+                                            <option value="15">XV Región, Arica y Parinacota.</option>
+                                            <option value="1">I Región, Tarapacá.</option>
+                                            <option value="2">II Región, Antofagasta.</option>
+                                            <option value="3">III Región, Atacama.</option>
+                                            <option value="4">IV Región, Coquimbo.</option>
+                                            <option value="5">V Región, Valparaiso.</option>
+                                            <option value="13">RM, Metropolitana de Santiago.</option>
+                                            <option value="6">VI Región, Libertador General Bernardo O\ Higgins.</option>
+                                            <option value="7">VII Región, Maule.</option>
+                                            <option value="8">VIII Región, Biobío.</option>
+                                            <option value="9">IX Región, La Araucanía.</option>
+                                            <option value="14">XIV Región, Los Ríos.</option>
+                                            <option value="10">X Región, Los Lagos.</option>
+                                            <option value="11">XI Región, Aisén del General Carlos Ibáñez del Campo.</option>
+                                            <option value="12">XII Región, Magallanes y de la Antártica Chilena.</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Ciudad:</label>
                                     <div class="col-sm-2 ">
-                                        <select class="selectpicker" name="instalacion_origen_ciudad">
+                                        <select class="selectpicker" name="instalacion_origen_ciudad" id="instalacion_origen_ciudad">
                                             <option value="">Seleccione ciudad</option>
-                                            <option>ciudad 1</option>
-                                            <option>ciudad 2</option>
-                                            <option>ciudad 3</option>
-                                            <option>ciudad 4</option>
-                                            <option>ciudad 5</option>
                                         </select>
                                     </div>
                                     <label class="col-sm-3 control-label form-label">Comuna:</label>
                                     <div class="col-sm-2 ">
-                                        <select class="selectpicker" name="instalacion_origen_comuna">
+                                        <select class="selectpicker" name="instalacion_origen_comuna" id="instalacion_origen_comuna">
                                             <option value="">Seleccione comuna</option>
-                                            <option>comuna 1</option>
-                                            <option>comuna 2</option>
-                                            <option>comuna 3</option>
-                                            <option>comuna 4</option>
-                                            <option>comuna 5</option>
                                         </select>
                                     </div>
                                 </div>
@@ -398,47 +378,37 @@
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Región:</label>
                                     <div class="col-sm-8 ">
-                                        <select class="selectpicker" name="instalacion_destino_region">
-                                            <option value="">Seleccione Región:</option>
-                                            <option value="I Región, Tarapacá.">I Región, Tarapacá.</option>
-                                            <option value="II Región, Antofagasta.">II Región, Antofagasta.</option>
-                                            <option value="III Región, Atacama.">III Región, Atacama.</option>
-                                            <option value="IV Región, Coquimbo.">IV Región, Coquimbo.</option>
-                                            <option value="V Región, Valparaiso.">V Región, Valparaiso.</option>
-                                            <option value="RM, Metropolitana de Santiago.">RM, Metropolitana de Santiago.</option>
-                                            <option value="VI Región, Libertador General Bernardo O\ Higgins.">VI Región, Libertador General Bernardo O\ Higgins.</option>
-                                            <option value="VII Región, Maule.">VII Región, Maule.</option>
-                                            <option value="VIII Región, Biobío.">VIII Región, Biobío.</option>
-                                            <option value="IX Región, La Araucanía.">IX Región, La Araucanía.</option>
-                                            <option value="X Región, Los Lagos.">X Región, Los Lagos.</option>
-                                            <option value="XI Región, Aisén del General Carlos Ibáñez del Campo.">XI Región, Aisén del General Carlos Ibáñez del Campo.</option>
-                                            <option value="XII Región, Magallanes y de la Antártica Chilena.">XII Región, Magallanes y de la Antártica Chilena.</option>
-                                            <option value="XIV Región, Los Ríos.">XIV Región, Los Ríos.</option>
-                                            <option value="XV Región, Arica y Parinacota.">XV Región, Arica y Parinacota.</option>
+                                        <select class="selectpicker" name="instalacion_destino_region" id="instalacion_destino_region">
+                                            <option value="0">Seleccione Región:</option>
+                                            <option value="15">XV Región, Arica y Parinacota.</option>
+                                            <option value="1">I Región, Tarapacá.</option>
+                                            <option value="2">II Región, Antofagasta.</option>
+                                            <option value="3">III Región, Atacama.</option>
+                                            <option value="4">IV Región, Coquimbo.</option>
+                                            <option value="5">V Región, Valparaiso.</option>
+                                            <option value="13">RM, Metropolitana de Santiago.</option>
+                                            <option value="6">VI Región, Libertador General Bernardo O\ Higgins.</option>
+                                            <option value="7">VII Región, Maule.</option>
+                                            <option value="8">VIII Región, Biobío.</option>
+                                            <option value="9">IX Región, La Araucanía.</option>
+                                            <option value="14">XIV Región, Los Ríos.</option>
+                                            <option value="10">X Región, Los Lagos.</option>
+                                            <option value="11">XI Región, Aisén del General Carlos Ibáñez del Campo.</option>
+                                            <option value="12">XII Región, Magallanes y de la Antártica Chilena.</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Ciudad:</label>
                                     <div class="col-sm-2 ">
-                                        <select class="selectpicker" name="instalacion_destino_ciudad">
+                                        <select class="selectpicker" name="instalacion_destino_ciudad" id="instalacion_destino_ciudad">
                                             <option value="">Seleccione ciudad</option>
-                                            <option>ciudad 1</option>
-                                            <option>ciudad 2</option>
-                                            <option>ciudad 3</option>
-                                            <option>ciudad 4</option>
-                                            <option>ciudad 5</option>
                                         </select>
                                     </div>
                                     <label class="col-sm-3 control-label form-label">Comuna:</label>
                                     <div class="col-sm-2 ">
-                                        <select class="selectpicker" name="instalacion_destino_comuna">
+                                        <select class="selectpicker" name="instalacion_destino_comuna" id="instalacion_destino_comuna">
                                             <option value="">Seleccione comuna</option>
-                                            <option>comuna 1</option>
-                                            <option>comuna 2</option>
-                                            <option>comuna 3</option>
-                                            <option>comuna 4</option>
-                                            <option>comuna 5</option>
                                         </select>
                                     </div>
                                 </div>
@@ -624,11 +594,11 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label form-label">N° de Serie:</label>
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese N° de serie" name="equipo_num_serie1" >
+                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese N° de serie" name="equipo_num_serie" >
                                     </div>
                                     <label class="col-sm-3 control-label form-label">Año de fabricación:</label>
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese Año" name="equipo_año1" >
+                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese Año" name="equipo_anio1" >
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -713,7 +683,7 @@
                                     </div>
                                     <div class="col-sm-3 radio radio-info radio-inline">
                                         <input type="radio" id="inlineRadio13" value="Roja" name="categoria_bulto" required>
-                                        <label for="inlineRadio13">III - ROJA </label>
+                                        <label for="inlineRadio13"> III - ROJA </label>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -760,7 +730,7 @@
                                         <label class="col-sm-5 control-label form-label">Autorización de Importación (para equipo recién ingresado al país) o Autorización de Operación del Equipo (para equipo móvil ya en uso):</label>
                                         <div class="col-sm-7">
                                             <p class="form-control-static">
-                                                <input type="file" style="border: 0px !important;" required>
+                                                <input type="file" style="border: 0px !important;" >
                                             </p>
                                         </div>
                                     </div>
@@ -768,7 +738,7 @@
                                         <label class="col-sm-5 control-label form-label">Autorización de Instalación de almacenamiento de Origen y Destino del transporte. (En el caso que la bodega de destino sea de otra empresa, esta deberá indicar por escrito que autoriza el almacenamiento del equipo en sus instalaciones): </label>
                                         <div class="col-sm-7">
                                             <p class="form-control-static">
-                                                <input type="file" style="border: 0px !important;" required>
+                                                <input type="file" style="border: 0px !important;" >
                                             </p>
                                         </div>
                                     </div>
@@ -776,7 +746,7 @@
                                         <label class="col-sm-5 control-label form-label">Autorización de desempeño de la persona responsable del transporte y documento firmado en que declara que actuará como responsable de la protección radiológica del transporte:</label>
                                         <div class="col-sm-7">
                                             <p class="form-control-static">
-                                                <input type="file" style="border: 0px !important;" required>
+                                                <input type="file" style="border: 0px !important;" >
                                             </p>
                                         </div>
                                     </div>
@@ -784,7 +754,7 @@
                                         <label class="col-sm-5 control-label form-label">Mandato legal, en el caso de ser presentada por terceros la presente solicitud: </label>
                                         <div class="col-sm-7">
                                             <p class="form-control-static">
-                                                <input type="file" style="border: 0px !important;" required>
+                                                <input type="file" style="border: 0px !important;" >
                                             </p>
                                         </div>
                                     </div>
@@ -792,9 +762,11 @@
                                         <label class="col-sm-5 control-label form-label">Otros antecedentes que acrediten la posesión de la sustancia radiactiva o equipo. (ej. contrato de arrendamiento): </label>
                                         <div class="col-sm-7">
                                             <p class="form-control-static">
-                                                <input type="file" style="border: 0px !important;" required>
+                                                <input type="file" style="border: 0px !important;" >
                                             </p>
                                         </div>
+                                    </div>
+                                    <div id="respuesta">
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-8">&nbsp;</div>
@@ -972,7 +944,7 @@ Plugin.js - Some Specific JS codes for Plugin Settings
     <!-- ================================================
 Bootstrap Select
 ================================================ -->
-    <script type="text/javascript" src="views/js/bootstrap-select/bootstrap-select.js"></script>
+    <!--<script type="text/javascript" src="views/js/bootstrap-select/bootstrap-select.js"></script>-->
     <!-- ================================================
 Bootstrap Toggle
 ================================================ -->
@@ -1012,6 +984,40 @@ Bootstrap Date Range Picker
     <!-- Basic Date Range Picker -->
     <script type="text/javascript">
     $(document).ready(function() {
+
+        $('#soli_region').on('change', function() {
+            var region = $(this).val();
+            $('#soli_ciudad').load("views/modales/ciudades.php?region=" + region);
+            console.log("Region Cargada: " + region);
+            $("#soli_ciudad").find('option').first().attr('selected','selected');
+
+            $('#soli_comuna').load("views/modales/comunas.php?region=" + region);
+            console.log("Comuna Cargada: " + region);
+            $("#soli_comuna").find('option').first().attr('selected','selected');
+        });
+
+        $('#instalacion_origen_region').on('change', function() {
+            var region = $(this).val();
+            $('#instalacion_origen_ciudad').load("views/modales/ciudades.php?region=" + region);
+            console.log("Region Cargada: " + region);
+            $("#instalacion_origen_ciudad").find('option').first().attr('selected','selected');
+
+            $('#instalacion_origen_comuna').load("views/modales/comunas.php?region=" + region);
+            console.log("Comuna Cargada: " + region);
+            $("#instalacion_origen_comuna").find('option').first().attr('selected','selected');
+        });
+
+        $('#instalacion_destino_region').on('change', function() {
+            var region = $(this).val();
+            $('#instalacion_destino_ciudad').load("views/modales/ciudades.php?region=" + region);
+            console.log("Region Cargada: " + region);
+            $("#instalacion_destino_ciudad").find('option').first().attr('selected','selected');
+
+            $('#instalacion_destino_comuna').load("views/modales/comunas.php?region=" + region);
+            console.log("Comuna Cargada: " + region);
+            $("#instalacion_destino_comuna").find('option').first().attr('selected','selected');
+        });
+
         $('#date-range-picker').daterangepicker(null, function(start, end, label) {
             console.log(start.toISOString(), end.toISOString(), label);
         });
@@ -1069,6 +1075,21 @@ Bootstrap Date Range Picker
         });
     });
     </script>
+    <script type="text/javascript">
+    var frm = $('#save_soli4');
+    frm.submit(function (ev) {
+        $.ajax({
+            type: frm.attr('method'),
+            url: frm.attr('action'),
+            data: frm.serialize(),
+            success: function (data) {
+                $("#respuesta").html(data);
+            }
+        });
+
+        ev.preventDefault();
+    });
+</script>
 </body>
 
 </html>

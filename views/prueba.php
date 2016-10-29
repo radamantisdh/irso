@@ -201,22 +201,6 @@ Bootstrap Toggle
 ================================================ -->
     <script type="text/javascript" src="views/js/bootstrap-toggle/bootstrap-toggle.min.js"></script>
     <!-- ================================================
-Moment.js
-================================================ -->
-    <script type="text/javascript" src="views/js/moment/moment.min.js"></script>
-    <!-- ================================================
-jQuery Library
-================================================ -->
-    <script type="text/javascript" src="views/js/jquery.min.js"></script>
-    <!-- ================================================
-Bootstrap Core JavaScript File
-================================================ -->
-    <script src="views/js/bootstrap/bootstrap.min.js"></script>
-    <!-- ================================================
-Plugin.js - Some Specific JS codes for Plugin Settings
-================================================ -->
-    <script type="text/javascript" src="views/js/plugins.js"></script>
-    <!-- ================================================
 Sweet Alert
 ================================================ -->
     <script src="views/js/sweet-alert/sweet-alert.min.js"></script>
@@ -224,6 +208,26 @@ Sweet Alert
 Kode Alert
 ================================================ -->
     <script src="views/js/kode-alert/main.js"></script>
+    <!-- ================================================
+jQuery UI
+================================================ -->
+    <script type="text/javascript" src="views/js/jquery-ui/jquery-ui.min.js"></script>
+    <!-- ================================================
+Moment.js
+================================================ -->
+    <script type="text/javascript" src="views/js/moment/moment.min.js"></script>
+    <!-- ================================================
+Full Calendar
+================================================ -->
+    <script type="text/javascript" src="views/js/full-calendar/fullcalendar.js"></script>
+    <!-- ================================================
+Bootstrap Date Range Picker
+================================================ -->
+    <script type="text/javascript" src="views/js/date-range-picker/daterangepicker.js"></script>
+    <!-- ================================================
+Moment.js
+================================================ -->
+    <script type="text/javascript" src="views/js/moment/moment.min.js"></script>
     <!-- ================================================
 Bootstrap Date Range Picker
 ================================================ -->

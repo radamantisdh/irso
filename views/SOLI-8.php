@@ -135,11 +135,11 @@
                             </ul>
                         </div>
                         <div class="panel-body">
-                            <form action="save.html" class="form-horizontal">
+                            <form action="views/actions/save_soli-8.php" class="form-horizontal" id="save_soli8" method="post">
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label"><b>Numero ASDigital:</b></label>
                                     <div class="col-sm-8">
-                                        <input type="number" class="form-control" id="input11" placeholder="Ingrese N°" name="nro_asd" required>
+                                        <input type="text" class="form-control" id="input11" placeholder="Ingrese N°" name="nro_asd" required>
                                     </div>
                                 </div>
                                 <div class="panel-title">
@@ -187,39 +187,39 @@
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Región:</label>
                                     <div class="col-sm-8 ">
-                                        <select class="selectpicker" name="soli_region">
-                                            <option value="">Seleccione Región:</option>
-                                            <option>Región 1</option>
-                                            <option>Región 2</option>
-                                            <option>Región 3</option>
-                                            <option>Región 4</option>
-                                            <option>Región 5</option>
+                                        <select class="selectpicker" name="soli_region"  id="soli_region">
+                                            <option value="0">Seleccione Región:</option>
+                                            <option value="15">XV Región, Arica y Parinacota.</option>
+                                            <option value="1">I Región, Tarapacá.</option>
+                                            <option value="2">II Región, Antofagasta.</option>
+                                            <option value="3">III Región, Atacama.</option>
+                                            <option value="4">IV Región, Coquimbo.</option>
+                                            <option value="5">V Región, Valparaiso.</option>
+                                            <option value="13">RM, Metropolitana de Santiago.</option>
+                                            <option value="6">VI Región, Libertador General Bernardo O\ Higgins.</option>
+                                            <option value="7">VII Región, Maule.</option>
+                                            <option value="8">VIII Región, Biobío.</option>
+                                            <option value="9">IX Región, La Araucanía.</option>
+                                            <option value="14">XIV Región, Los Ríos.</option>
+                                            <option value="10">X Región, Los Lagos.</option>
+                                            <option value="11">XI Región, Aisén del General Carlos Ibáñez del Campo.</option>
+                                            <option value="12">XII Región, Magallanes y de la Antártica Chilena.</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Ciudad:</label>
                                     <div class="col-sm-8 ">
-                                        <select class="selectpicker" name="soli_ciudad">
+                                        <select class="selectpicker" name="soli_ciudad"  id="soli_ciudad">
                                             <option value="">Seleccione ciudad</option>
-                                            <option>ciudad 1</option>
-                                            <option>ciudad 2</option>
-                                            <option>ciudad 3</option>
-                                            <option>ciudad 4</option>
-                                            <option>ciudad 5</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Comuna:</label>
                                     <div class="col-sm-8 ">
-                                        <select class="selectpicker" name="soli_comuna">
+                                        <select class="selectpicker" name="soli_comuna" id="soli_comuna">
                                             <option value="">Seleccione comuna</option>
-                                            <option>comuna 1</option>
-                                            <option>comuna 2</option>
-                                            <option>comuna 3</option>
-                                            <option>comuna 4</option>
-                                            <option>comuna 5</option>
                                         </select>
                                     </div>
                                 </div>
@@ -309,37 +309,37 @@
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Región:</label>
                                     <div class="col-sm-8 ">
-                                        <select class="selectpicker" name="instalacion_origen_region">
-                                            <option value="">Seleccione Región:</option>
-                                            <option>Región 1</option>
-                                            <option>Región 2</option>
-                                            <option>Región 3</option>
-                                            <option>Región 4</option>
-                                            <option>Región 5</option>
+                                        <select class="selectpicker" name="instalacion_origen_region" id="instalacion_origen_region">
+                                            <option value="0">Seleccione Región:</option>
+                                            <option value="15">XV Región, Arica y Parinacota.</option>
+                                            <option value="1">I Región, Tarapacá.</option>
+                                            <option value="2">II Región, Antofagasta.</option>
+                                            <option value="3">III Región, Atacama.</option>
+                                            <option value="4">IV Región, Coquimbo.</option>
+                                            <option value="5">V Región, Valparaiso.</option>
+                                            <option value="13">RM, Metropolitana de Santiago.</option>
+                                            <option value="6">VI Región, Libertador General Bernardo O\ Higgins.</option>
+                                            <option value="7">VII Región, Maule.</option>
+                                            <option value="8">VIII Región, Biobío.</option>
+                                            <option value="9">IX Región, La Araucanía.</option>
+                                            <option value="14">XIV Región, Los Ríos.</option>
+                                            <option value="10">X Región, Los Lagos.</option>
+                                            <option value="11">XI Región, Aisén del General Carlos Ibáñez del Campo.</option>
+                                            <option value="12">XII Región, Magallanes y de la Antártica Chilena.</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Ciudad:</label>
                                     <div class="col-sm-2 ">
-                                        <select class="selectpicker" name="instalacion_origen_ciudad">
+                                        <select class="selectpicker" name="instalacion_origen_ciudad" id="instalacion_origen_ciudad">
                                             <option value="">Seleccione ciudad</option>
-                                            <option>ciudad 1</option>
-                                            <option>ciudad 2</option>
-                                            <option>ciudad 3</option>
-                                            <option>ciudad 4</option>
-                                            <option>ciudad 5</option>
                                         </select>
                                     </div>
                                     <label class="col-sm-3 control-label form-label">Comuna:</label>
                                     <div class="col-sm-2 ">
-                                        <select class="selectpicker" name="instalacion_origen_comuna">
+                                        <select class="selectpicker" name="instalacion_origen_comuna" id="instalacion_origen_comuna">
                                             <option value="">Seleccione comuna</option>
-                                            <option>comuna 1</option>
-                                            <option>comuna 2</option>
-                                            <option>comuna 3</option>
-                                            <option>comuna 4</option>
-                                            <option>comuna 5</option>
                                         </select>
                                     </div>
                                 </div>
@@ -402,18 +402,11 @@
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label form-label">Ciudad:</label>
-                                    <div class="col-sm-2 ">
-                                        <select class="selectpicker" name="instalacion_destino_ciudad">
-                                            <option value="">Seleccione ciudad</option>
-                                            <option>ciudad 1</option>
-                                            <option>ciudad 2</option>
-                                            <option>ciudad 3</option>
-                                            <option>ciudad 4</option>
-                                            <option>ciudad 5</option>
-                                        </select>
+                                    <div class="col-sm-4 ">
+                                        <input type="text" class="form-control" id="input11"  placeholder="Ingrese Ciudad" name="instalacion_destino_ciudad">
                                     </div>
-                                    <label class="col-sm-3 control-label form-label">País:</label>
-                                    <div class="col-sm-2 ">
+                                    <label class="col-sm-1 control-label form-label">País:</label>
+                                    <div class="col-sm-4 ">
                                         <select class="selectpicker" name="instalacion_destino_pais">
                                             <option value="">Seleccione País:</option>
                                             <option>País 1</option>
@@ -523,7 +516,7 @@
                                         <label class="col-sm-5 control-label form-label">Carta del representante legal indicando el destino de la sustancia radiactiva a exportar: </label>
                                         <div class="col-sm-7">
                                             <p class="form-control-static">
-                                                <input type="file" style="border: 0px !important;" required>
+                                                <input type="file" style="border: 0px !important;" >
                                             </p>
                                         </div>
                                     </div>
@@ -531,7 +524,7 @@
                                         <label class="col-sm-5 control-label form-label">Documento que acredite propiedad de la sustancia radiactiva a exportar:</label>
                                         <div class="col-sm-7">
                                             <p class="form-control-static">
-                                                <input type="file" style="border: 0px !important;" required>
+                                                <input type="file" style="border: 0px !important;" >
                                             </p>
                                         </div>
                                     </div>
@@ -539,7 +532,7 @@
                                         <label class="col-sm-5 control-label form-label">Documento que acredite que la Autoridad Regulatoria del país de destino, autoriza el ingreso de la sustancia radiactiva: </label>
                                         <div class="col-sm-7">
                                             <p class="form-control-static">
-                                                <input type="file" style="border: 0px !important;" required>
+                                                <input type="file" style="border: 0px !important;" >
                                             </p>
                                         </div>
                                     </div>
@@ -547,7 +540,7 @@
                                         <label class="col-sm-5 control-label form-label">Copia de Resolución de Autorización de funcionamiento del equipo que contiene sustancia radiactiva o Autorización de funcionamiento de la instalación radiactiva: </label>
                                         <div class="col-sm-7">
                                             <p class="form-control-static">
-                                                <input type="file" style="border: 0px !important;" required>
+                                                <input type="file" style="border: 0px !important;" >
                                             </p>
                                         </div>
                                     </div>
@@ -555,7 +548,7 @@
                                         <label class="col-sm-5 control-label form-label">Copia de Resolución de Transporte de la sustancia radiactiva a exportar: </label>
                                         <div class="col-sm-7">
                                             <p class="form-control-static">
-                                                <input type="file" style="border: 0px !important;" required>
+                                                <input type="file" style="border: 0px !important;" >
                                             </p>
                                         </div>
                                     </div>
@@ -563,7 +556,7 @@
                                         <label class="col-sm-5 control-label form-label">Procedimiento seguro de exportación de la sustancia radiactiva, el que considere los aspectos de protección radiológica operacional, transporte, gestión de desechos radiactivos y situaciones de emergenciass: </label>
                                         <div class="col-sm-7">
                                             <p class="form-control-static">
-                                                <input type="file" style="border: 0px !important;" required>
+                                                <input type="file" style="border: 0px !important;" >
                                             </p>
                                         </div>
                                     </div>
@@ -571,7 +564,7 @@
                                         <label class="col-sm-5 control-label form-label">Mandato legal, en el caso que la solicitud sea presentada por terceros: </label>
                                         <div class="col-sm-7">
                                             <p class="form-control-static">
-                                                <input type="file" style="border: 0px !important;" required>
+                                                <input type="file" style="border: 0px !important;" >
                                             </p>
                                         </div>
                                     </div>
@@ -579,9 +572,11 @@
                                         <label class="col-sm-5 control-label form-label">En caso de exportar equipos con fuentes radiactivas, adjuntar fotografías de su placa de identificación: </label>
                                         <div class="col-sm-7">
                                             <p class="form-control-static">
-                                                <input type="file" style="border: 0px !important;" required>
+                                                <input type="file" style="border: 0px !important;" >
                                             </p>
                                         </div>
+                                    </div>
+                                    <div id="respuesta">
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-8">&nbsp;</div>
@@ -759,7 +754,7 @@ Plugin.js - Some Specific JS codes for Plugin Settings
     <!-- ================================================
 Bootstrap Select
 ================================================ -->
-    <script type="text/javascript" src="views/js/bootstrap-select/bootstrap-select.js"></script>
+    <!--<script type="text/javascript" src="views/js/bootstrap-select/bootstrap-select.js"></script>-->
     <!-- ================================================
 Bootstrap Toggle
 ================================================ -->
@@ -799,6 +794,29 @@ Bootstrap Date Range Picker
     <!-- Basic Date Range Picker -->
     <script type="text/javascript">
     $(document).ready(function() {
+
+        $('#soli_region').on('change', function() {
+            var region = $(this).val();
+            $('#soli_ciudad').load("views/modales/ciudades.php?region=" + region);
+            console.log("Region Cargada: " + region);
+            $("#soli_ciudad").find('option').first().attr('selected','selected');
+
+            $('#soli_comuna').load("views/modales/comunas.php?region=" + region);
+            console.log("Comuna Cargada: " + region);
+            $("#soli_comuna").find('option').first().attr('selected','selected');
+        });
+
+        $('#instalacion_origen_region').on('change', function() {
+            var region = $(this).val();
+            $('#instalacion_origen_ciudad').load("views/modales/ciudades.php?region=" + region);
+            console.log("Region Cargada: " + region);
+            $("#instalacion_origen_ciudad").find('option').first().attr('selected','selected');
+
+            $('#instalacion_origen_comuna').load("views/modales/comunas.php?region=" + region);
+            console.log("Comuna Cargada: " + region);
+            $("#instalacion_origen_comuna").find('option').first().attr('selected','selected');
+        });
+
         $('#date-range-picker').daterangepicker(null, function(start, end, label) {
             console.log(start.toISOString(), end.toISOString(), label);
         });
@@ -841,6 +859,21 @@ Bootstrap Date Range Picker
         });
     });
     </script>
+    <script type="text/javascript">
+    var frm = $('#save_soli8');
+    frm.submit(function (ev) {
+        $.ajax({
+            type: frm.attr('method'),
+            url: frm.attr('action'),
+            data: frm.serialize(),
+            success: function (data) {
+                $("#respuesta").html(data);
+            }
+        });
+
+        ev.preventDefault();
+    });
+</script>
 </body>
 
 </html>

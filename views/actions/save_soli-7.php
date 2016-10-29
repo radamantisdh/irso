@@ -144,7 +144,7 @@ elseif(empty($soli_nombre)) { echo $error."El campo <b>Nombre</b> no puede queda
 elseif(empty($soli_ap_pat)) { echo $error."El campo <b>Apellido Paterno</b> no puede quedar vacio".$finerror; $cago = true; }
 elseif(empty($soli_ap_mat)) { echo $error."El campo <b>Apellido Materno</b> no puede quedar vacio".$finerror; $cago = true; }
 elseif(empty($soli_rut)) { echo $error."El campo <b>RUT</b> no puede quedar vacio".$finerror; $cago = true; }
-elseif(empty($soli_dv)) { echo $error."El campo <b>Digito Verificador (DV)</b> no puede quedar vacio".$finerror; $cago = true; }
+//elseif(empty($soli_dv)) { echo $error."El campo <b>Digito Verificador (DV)</b> no puede quedar vacio".$finerror; $cago = true; }
 elseif(empty($soli_calle)) { echo $error."El campo <b>Calle</b> no puede quedar vacio".$finerror; $cago = true; }
 elseif(empty($soli_numero)) { echo $error."El campo <b>Número</b> no puede quedar vacio".$finerror; $cago = true; }
 elseif(empty($soli_region)) { echo $error."El campo <b>Región</b> no puede quedar vacio".$finerror; $cago = true; }
@@ -157,7 +157,7 @@ elseif(empty($rep_leg_nombre)) { echo $error."El campo <b>Nombre del Representat
 elseif(empty($rep_leg_ap_pat)) { echo $error."El campo <b>Apellido Paterno del Representate Legal</b> no puede quedar vacio".$finerror; $cago = true; }
 elseif(empty($rep_leg_ap_mat)) { echo $error."El campo <b>Apellido Materno del Representate Legal</b> no puede quedar vacio".$finerror; $cago = true; }
 elseif(empty($rep_leg_rut)) { echo $error."El campo <b>RUT del Representate Legal</b> no puede quedar vacio".$finerror; $cago = true; }
-elseif(empty($rep_leg_dv)) { echo $error."El campo <b>Digito Verificador (DV) del Representate Legal</b> no puede quedar vacio".$finerror; $cago = true; }
+//elseif(empty($rep_leg_dv)) { echo $error."El campo <b>Digito Verificador (DV) del Representate Legal</b> no puede quedar vacio".$finerror; $cago = true; }
 elseif(empty($rep_leg_telefono)) { echo $error."El campo <b>Teléfono del Representate Legal</b> no puede quedar vacio".$finerror; $cago = true; }
 elseif(empty($rep_leg_celular)) { echo $error."El campo <b>Celular Representate Legal</b> no puede quedar vacio".$finerror; $cago = true; }
 elseif(empty($rep_leg_email)) { echo $error."El campo <b>Email Representate Legal</b> no puede quedar vacio".$finerror; $cago = true; }
@@ -178,20 +178,91 @@ elseif(empty($fecha_ingreso)) { echo $error."El campo <b>Fecha de Ingreso</b> no
 else {
 	//echo $error."Error 41: Contacte al administrador".$finerror; $cago = true;
 	if($cago == false) {
+		$frase = str_replace("_", " ", $importacion);
+
+		$numeros = array("0", "15", "14", "13", "12", "11", "10", "1", "2", "3", "4", "5", "6", "7", "8", "9");
+            $regiones = array("seleccione region", "XV Region, Arica y Parinacota.", "XIV Region, Los Rios.", "RM, Metropolitana de Santiago.", 
+                  "XII Región, Magallanes y de la Antártica Chilena.", "XI Region, Aisen del General Carlos Ibañez del Campo.", "X Región, Los Lagos.", "I Region, Tarapacá.", 
+                  "II Region, Antofagasta.", "III Region, Atacama.", "IV Region, Coquimbo.", "V Region, Valparaiso.", "VI Region, Libertador General Bernardo O\ Higgins.",
+            "VII Region, Maule.", "VIII Region, Biobio.", "IX Region, La Araucania.");
+            $frase1 = str_replace($numeros, $regiones, $soli_region);
+            $frase2 = str_replace("_", " ", $soli_ciudad);
+            $frase3 = str_replace("_", " ", $soli_comuna);
+            
+            $frase4 = str_replace($numeros, $regiones, $instalacion_origen_region);
+            $frase5 = str_replace("_", " ", $instalacion_origen_ciudad);
+            $frase6 = str_replace("_", " ", $instalacion_origen_comuna);
+            
 	//inserta la mierda
-		$sql = "INSERT INTO 	l_7 (
-            nro_asd, soli_nombre, soli_ap_pat, soli_ap_mat, soli_rut, 
-            soli_dv, soli_calle, soli_numero, soli_resto, soli_region, soli_ciudad, 
-            soli_telefono, soli_email, soli_inst_ed_sup, soli_nivel, fecha_ingreso)
-    VALUES ('$nro_asd', '$soli_nombre', '$soli_ap_pat', '$soli_ap_mat', '$soli_rut', '$soli_dv', 
-            '$soli_calle', '$soli_numero', '$soli_resto', '$soli_region', '$soli_ciudad', '$soli_telefono', 
-            '$soli_email', '$soli_inst_ed_sup', '$soli_nivel', '$fecha_ingreso')";
+		$sql = "INSERT INTO 	soli_7(
+            importacion, nro_asd, soli_nombre, soli_ap_pat, soli_ap_mat, 
+            soli_rut, soli_dv, soli_calle, soli_numero, soli_resto, soli_region, 
+            soli_ciudad, soli_comuna, soli_telefono, soli_celular, soli_email, 
+            rep_leg_nombre, rep_leg_ap_pat, rep_leg_ap_mat, rep_leg_rut, 
+            rep_leg_dv, rep_leg_telefono, rep_leg_celular, rep_leg_email, 
+            instalacion_origen_calle, instalacion_origen_numero, instalacion_origen_resto, 
+            instalacion_origen_region, instalacion_origen_ciudad, instalacion_origen_comuna, 
+            instalacion_origen_num_res, instalacion_origen_fecha, instalacion_origen_seremi, 
+            sustancia_cantidad1, sustancia_uso1, sustancia_radioiso1, sustancia_marca1, 
+            sustancia_modelo1, sustancia_numero1, sustancia_act_bq1, sustancia_cantidad2, 
+            sustancia_uso2, sustancia_radioiso2, sustancia_marca2, sustancia_modelo2, 
+            sustancia_numero2, sustancia_act_bq2, sustancia_cantidad3, sustancia_uso3, 
+            sustancia_radioiso3, sustancia_marca3, sustancia_modelo3, sustancia_numero3, 
+            sustancia_act_bq3, sustancia_cantidad4, sustancia_uso4, sustancia_radioiso4, 
+            sustancia_marca4, sustancia_modelo4, sustancia_numero4, sustancia_act_bq4, 
+            sustancia_cantidad5, sustancia_uso5, sustancia_radioiso5, sustancia_marca5, 
+            sustancia_modelo5, sustancia_numero5, sustancia_act_bq5, equipo_eq_cantidad1, 
+            equipo_eq_tipo1, equipo_eq_marca1, equipo_eq_modelo1, equipo_eq_serie1, 
+            equipo_el_radioiso1, equipo_el_marca1, equipo_el_modelo1, equipo_el_serie1, 
+            equipo_el_bq1, equipo_eq_cantidad2, equipo_eq_tipo2, equipo_eq_marca2, 
+            equipo_eq_modelo2, equipo_eq_serie2, equipo_el_radioiso2, equipo_el_marca2, 
+            equipo_el_modelo2, equipo_el_serie2, equipo_el_bq2, equipo_eq_cantidad3, 
+            equipo_eq_tipo3, equipo_eq_marca3, equipo_eq_modelo3, equipo_eq_serie3, 
+            equipo_el_radioiso3, equipo_el_marca3, equipo_el_modelo3, equipo_el_serie3, 
+            equipo_el_bq3, equipo_eq_cantidad4, equipo_eq_tipo4, equipo_eq_marca4, 
+            equipo_eq_modelo4, equipo_eq_serie4, equipo_el_radioiso4, equipo_el_marca4, 
+            equipo_el_modelo4, equipo_el_serie4, equipo_el_bq4, equipo_eq_cantidad5, 
+            equipo_eq_tipo5, equipo_eq_marca5, equipo_eq_modelo5, equipo_eq_serie5, 
+            equipo_el_radioiso5, equipo_el_marca5, equipo_el_modelo5, equipo_el_serie5, 
+            equipo_el_bq5, aduana, pais_procedencia, fabricante, representante_vendedor, 
+            valor_cif, observaciones, fecha_ingreso)
+    VALUES ('$frase', '$nro_asd', '$soli_nombre', '$soli_ap_pat', '$soli_ap_mat', 
+            '$soli_rut', '$soli_dv', '$soli_calle', '$soli_numero', '$soli_resto', '$frase1', 
+            '$frase2', '$frase3', '$soli_telefono', '$soli_celular', '$soli_email', 
+            '$rep_leg_nombre', '$rep_leg_ap_pat', '$rep_leg_ap_mat', '$rep_leg_rut', 
+            '$rep_leg_dv', '$rep_leg_telefono', '$rep_leg_celular', '$rep_leg_email', 
+            '$instalacion_origen_calle', '$instalacion_origen_numero', '$instalacion_origen_resto', 
+            '$frase4', '$frase5', '$frase6', 
+            '$instalacion_origen_num_res', '$instalacion_origen_fecha', '$instalacion_origen_seremi', 
+            '$sustancia_cantidad1', '$sustancia_uso1', '$sustancia_radioiso1', '$sustancia_marca1', 
+            '$sustancia_modelo1', '$sustancia_numero1', '$sustancia_act_bq1', '$sustancia_cantidad2', 
+            '$sustancia_uso2', '$sustancia_radioiso2', '$sustancia_marca2', '$sustancia_modelo2', 
+            '$sustancia_numero2', '$sustancia_act_bq2', '$sustancia_cantidad3', '$sustancia_uso3', 
+            '$sustancia_radioiso3', '$sustancia_marca3', '$sustancia_modelo3', '$sustancia_numero3', 
+            '$sustancia_act_bq3', '$sustancia_cantidad4', '$sustancia_uso4', '$sustancia_radioiso4', 
+            '$sustancia_marca4', '$sustancia_modelo4', '$sustancia_numero4', '$sustancia_act_bq4', 
+            '$sustancia_cantidad5', '$sustancia_uso5', '$sustancia_radioiso5', '$sustancia_marca5', 
+            '$sustancia_modelo5', '$sustancia_numero5', '$sustancia_act_bq5', '$equipo_eq_cantidad1', 
+            '$equipo_eq_tipo1', '$equipo_eq_marca1', '$equipo_eq_modelo1', '$equipo_eq_serie1', 
+            '$equipo_el_radioiso1', '$equipo_el_marca1', '$equipo_el_modelo1', '$equipo_el_serie1', 
+            '$equipo_el_bq1', '$equipo_eq_cantidad2', '$equipo_eq_tipo2', '$equipo_eq_marca2', 
+            '$equipo_eq_modelo2', '$equipo_eq_serie2', '$equipo_el_radioiso2', '$equipo_el_marca2', 
+            '$equipo_el_modelo2', '$equipo_el_serie2', '$equipo_el_bq2', '$equipo_eq_cantidad3', 
+            '$equipo_eq_tipo3', '$equipo_eq_marca3', '$equipo_eq_modelo3', '$equipo_eq_serie3', 
+            '$equipo_el_radioiso3', '$equipo_el_marca3', '$equipo_el_modelo3', '$equipo_el_serie3', 
+            '$equipo_el_bq3', '$equipo_eq_cantidad4', '$equipo_eq_tipo4', '$equipo_eq_marca4', 
+            '$equipo_eq_modelo4', '$equipo_eq_serie4', '$equipo_el_radioiso4', '$equipo_el_marca4', 
+            '$equipo_el_modelo4', '$equipo_el_serie4', '$equipo_el_bq4', '$equipo_eq_cantidad5', 
+            '$equipo_eq_tipo5', '$equipo_eq_marca5', '$equipo_eq_modelo5', '$equipo_eq_serie5', 
+            '$equipo_el_radioiso5', '$equipo_el_marca5', '$equipo_el_modelo5', '$equipo_el_serie5', 
+            '$equipo_el_bq5', '$aduana', '$pais_procedencia', '$fabricante', '$representante_vendedor', 
+            '$valor_cif', '$observaciones', '$fecha_ingreso')";
 	pg_query("$sql");
-	echo "Insertó la wea";
+	echo "<script>alert('Formulario enviado exitosamente.'); location.href='?modulo=save'</script>";
 
 	}
 	else{
-	echo $error."Error 42: Contacte al administrador [No se guardo el registro]".$finerror; $cago = true;	
+	echo $error."<font color=red><center>Error 42: Contacte al administrador [No se guardo el registro]</center></font>".$finerror; $cago = true;	
 	}
 }
 ?>

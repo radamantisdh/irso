@@ -129,7 +129,7 @@
         <!-- //////////////////////////////////////////////////////////////////////////// -->
         <div class="container-padding">
             <!-- Start Row -->
-            <form action="dasboard.html">
+            <form action="?modulo=dasboard">
                 <div class="row">
                     <div class="col-md-12 padding-b-20">
                         <h4 class="font-title">Solicitud Guardada</h4>
