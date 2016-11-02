@@ -5,7 +5,7 @@ include("../../includes/db.class.php");
 include("../../includes/setting.conf.php");
 
 $db = new DB();
-$db->conectar();
+$db->conectar(); //metodo que esta dando problema al enviar datos. al querer enviar tira el error del primer if (campo vacio)
 
 $error = "<font color=red><center>";
 $finerror = "</center></font>";
